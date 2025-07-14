@@ -1,0 +1,18 @@
+// String ৰ ভিতৰত vowel, consonant, digit, space count কৰা
+#include <stdio.h>
+int main() {
+    char str[100];
+    int v=0, c=0, d=0, s=0;
+    fgets(str, sizeof(str), stdin); // পূৰ্ণ string ইনপুট লোৱা
+    for(int i=0; str[i] != '\0'; i++) {
+        if((str[i]>='a'&&str[i]<='z')||(str[i]>='A'&&str[i]<='Z')) {
+            char ch = str[i] | 32; // lowercase ত convert কৰা
+            if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u') v++; // vowel count
+            else c++; // consonant count
+        }
+        else if(str[i]>='0' && str[i]<='9') d++; // digit count
+        else if(str[i]==' ') s++; // space count
+    }
+    printf("Vowels: %d\nConsonants: %d\nDigits: %d\nSpaces: %d\n", v, c, d, s);
+    return 0;
+}

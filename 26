@@ -1,0 +1,14 @@
+/ / Linear search ব্যৱহাৰ কৰি এটা উপাদান search কৰা
+#include <stdio.h>
+int main() {
+    int a[100], n, key, found=0;
+    scanf("%d", &n);
+    for(int i=0; i<n; i++) scanf("%d", &a[i]);
+    scanf("%d", &key);
+    for(int i=0; i<n; i++) {
+        if(a[i] == key) { found = 1; break; }
+    }
+    if(found) printf("Found\n");
+    else printf("Not Found\n");
+    return 0;
+}

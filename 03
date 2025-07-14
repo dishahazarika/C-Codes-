@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main() {
+    float r;
+    scanf("%f", &r); // ৰেডিয়াছ লোৱা
+    printf("%f\n", 3.14 * r * r); // এলাকা প্ৰিণ্ট
+    return 0;
+}

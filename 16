@@ -1,0 +1,16 @@
+[12:43 AM, 7/15/2025] Disha Hazarika: // 16. দুটা সংখ্যাৰ GCD আৰু LCM উলিওৱা
+#include <stdio.h>
+int main() {
+    int a, b, gcd, lcm;
+    scanf("%d %d", &a, &b);
+    int x = a, y = b;
+    while(b != 0) {
+        int t = b;
+        b = a % b;
+        a = t;
+    }
+    gcd = a;
+    lcm = (x * y) / gcd;
+    printf("GCD = %d, LCM = %d\n", gcd, lcm);
+    return 0;
+}

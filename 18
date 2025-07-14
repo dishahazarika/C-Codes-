@@ -1,0 +1,12 @@
+// 18. 1 ৰ পৰা 100 লৈ prime সংখ্যা প্ৰকাশ কৰা
+#include <stdio.h>
+int main() {
+    for(int i=2; i<=100; i++) {
+        int f = 1;
+        for(int j=2; j<i; j++) {
+            if(i % j == 0) { f = 0; break; }
+        }
+        if(f) printf("%d ", i);
+    }
+    return 0;
+}

@@ -1,0 +1,10 @@
+// Library function নব্যৱহাৰ কৰি string ৰ length উলিওৱা
+#include <stdio.h>
+int main() {
+    char str[100];
+    int len = 0;
+    scanf("%s", str); // string ইনপুট লোৱা
+    while(str[len] != '\0') len++; // শেষলৈকে count কৰা
+    printf("%d\n", len); // দৈৰ্ঘ্য প্ৰকাশ
+    return 0;
+}

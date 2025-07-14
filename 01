@@ -1,0 +1,7 @@
+// 1. Hello World
+#include <stdio.h>
+int main() {
+    // "Hello, World!" প্ৰিণ্ট কৰে
+    printf("Hello, World!\n");
+    return 0;
+}

@@ -1,0 +1,9 @@
+// 4. Temp variable ব্যৱহাৰ কৰি দুটা সংখ্যা অদল-বদল কৰা
+#include <stdio.h>
+int main() {
+    int a, b, t;
+    scanf("%d %d", &a, &b);
+    t = a; a = b; b = t; // অদল-বদল
+    printf("%d %d\n", a, b);
+    return 0;
+}
